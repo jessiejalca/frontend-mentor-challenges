@@ -94,6 +94,12 @@ body {
   background-color: var(--dark-cyan);
   border: none;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component button img {
+  margin-right: 1em;
 }
 
 h2 {
