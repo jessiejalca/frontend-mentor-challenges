@@ -14,7 +14,7 @@
   --normal: "Montserrat", sans-serif;
   --special: "Fraunces", serif;
   // --sizes
-  --body: 0.875rem;
+  --body-copy: 0.875rem;
 }
 
 // SASS
@@ -31,4 +31,4 @@ $white: var(--white);
 $normal: var(--normal);
 $special: var(--special);
 // --sizes
-$body: var(--body);
+$body-copy: var(--body-copy);

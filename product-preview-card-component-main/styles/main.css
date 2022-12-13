@@ -63,16 +63,65 @@ h6 {
   --white: hsl(0, 0%, 100%);
   --normal: "Montserrat", sans-serif;
   --special: "Fraunces", serif;
-  --body: 0.875rem;
+  --body-copy: 0.875rem;
 }
 
 body {
   font-size: 100%;
+  font-family: var(--normal);
+  color: var(--dark-grayish-blue);
   background-color: var(--cream);
+  padding: 1em;
 }
 
 .component {
+  margin: 0 auto;
+  max-width: 25rem;
+  border-radius: 10px;
   background-color: var(--white);
+  overflow: hidden;
+}
+.component section {
+  padding: 25px;
+}
+.component button {
+  width: 100%;
+  height: 3em;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 7px;
+}
+
+h2 {
+  font-family: var(--special);
+  font-size: 2em;
+  color: var(--very-dark-blue);
+  line-height: 1em;
+}
+
+p {
+  font-size: var(--body-copy);
+}
+
+.subhead {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.price {
+  font-family: var(--special);
+  font-size: 2em;
+  color: var(--dark-cyan);
+}
+.price s {
+  font-family: var(--normal);
+  font-size: 0.4em;
+  color: var(--dark-grayish-blue);
+}
+
+button {
+  font-weight: 700;
+  color: var(--white);
 }
 
 /*# sourceMappingURL=main.css.map */
