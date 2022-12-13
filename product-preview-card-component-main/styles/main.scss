@@ -1,6 +1,7 @@
 @use "reset";
-@use "variables";
+@use "variables" as *;
 
 body {
   font-size: 100%;
+  background-color: $cream;
 }

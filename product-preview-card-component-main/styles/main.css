@@ -10,6 +10,7 @@
 
 * {
   margin: 0;
+  line-height: calc(1em + 0.5rem);
 }
 
 html,
@@ -18,7 +19,6 @@ body {
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -67,6 +67,7 @@ h6 {
 
 body {
   font-size: 100%;
+  background-color: var(--cream);
 }
 
 /*# sourceMappingURL=main.css.map */
