@@ -8,11 +8,13 @@ body {
   color: $dark-grayish-blue;
   background-color: $cream;
   padding: 1em;
+  display: grid;
+  grid-template-rows: auto 3em;
 }
 
 // Layout
 .component {
-  margin: 0 auto;
+  margin: auto;
   max-width: 25rem;
   border-radius: 10px;
   background-color: $white;
@@ -55,5 +57,12 @@ p {
 }
 button {
   font-weight: 700;
+  font-size: $body-copy;
   color: $white;
+}
+
+// Attribution
+.attribution {
+  font-size: 0.8em;
+  text-align: center;
 }

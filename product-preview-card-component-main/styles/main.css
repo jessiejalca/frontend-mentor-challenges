@@ -72,10 +72,12 @@ body {
   color: var(--dark-grayish-blue);
   background-color: var(--cream);
   padding: 1em;
+  display: grid;
+  grid-template-rows: auto 3em;
 }
 
 .component {
-  margin: 0 auto;
+  margin: auto;
   max-width: 25rem;
   border-radius: 10px;
   background-color: var(--white);
@@ -121,7 +123,13 @@ p {
 
 button {
   font-weight: 700;
+  font-size: var(--body-copy);
   color: var(--white);
+}
+
+.attribution {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
