@@ -3,6 +3,9 @@
 header {
   background-color: $light-gray;
   padding: 60px;
+  @media screen and (max-width: 600px) {
+    padding: 35px;
+  }
 }
 
 .solutions-grid {
