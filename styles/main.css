@@ -95,7 +95,7 @@ header {
 .solution-card {
   margin: auto;
   max-width: 30rem;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #e8e8e8;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -103,7 +103,7 @@ header {
   padding: 1em;
 }
 .solution-card:hover {
-  box-shadow: 0 0 8px #c2c2c2;
+  box-shadow: 0 0 8px #e8e8e8;
 }
 
 /*# sourceMappingURL=main.css.map */
