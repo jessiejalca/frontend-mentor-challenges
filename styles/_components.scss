@@ -9,13 +9,27 @@
   // Text div container
   .card-text {
     padding: 1em;
+    display: grid;
+    gap: 0.6em;
+    // Tool tags
+    .tags {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 0.4em;
+        margin-right: 0.5em;
+        border: 2px solid fade-out($light-blue, 0.2);
+        border-radius: 5em;
+        font-weight: 700;
+        color: $light-blue;
+      }
+    }
     // Links to live page & repo
     a {
       font-size: 1.4em;
       margin-right: 0.2em;
-      &.live {
-        @include custom-links($light-blue);
-      }
+      &.live,
       &.repo {
         @include custom-links($light-red);
       }

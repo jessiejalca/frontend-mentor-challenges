@@ -65,6 +65,7 @@ h3 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #0a0b0b;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -112,21 +113,30 @@ header {
 }
 .solution-card .card-text {
   padding: 1em;
+  display: grid;
+  gap: 0.6em;
+}
+.solution-card .card-text .tags {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.solution-card .card-text .tags li {
+  padding: 0.4em;
+  margin-right: 0.5em;
+  border: 2px solid rgba(0, 175, 181, 0.8);
+  border-radius: 5em;
+  font-weight: 700;
+  color: #00afb5;
 }
 .solution-card .card-text a {
   font-size: 1.4em;
   margin-right: 0.2em;
 }
-.solution-card .card-text a.live {
-  color: #00afb5;
-}
-.solution-card .card-text a.live:hover {
-  background-color: rgba(0, 175, 181, 0.1);
-}
-.solution-card .card-text a.repo {
+.solution-card .card-text a.live, .solution-card .card-text a.repo {
   color: #fc5130;
 }
-.solution-card .card-text a.repo:hover {
+.solution-card .card-text a.live:hover, .solution-card .card-text a.repo:hover {
   background-color: rgba(252, 81, 48, 0.1);
 }
 .solution-card .card-image {
