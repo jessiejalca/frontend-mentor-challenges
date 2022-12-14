@@ -88,13 +88,24 @@ header {
 }
 
 .solutions-grid {
-  display: grid;
   padding: 2em;
+  display: grid;
+  gap: 1em;
+}
+@media screen and (min-width: 830px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .solution-card {
   margin: auto;
-  max-width: 30rem;
+  max-width: 25rem;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   overflow: hidden;
