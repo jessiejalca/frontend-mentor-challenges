@@ -56,7 +56,7 @@ h6 {
 body {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-size: 100%;
-  color: #011828;
+  color: #0a0b0b;
 }
 
 h1,
@@ -64,7 +64,7 @@ h2,
 h3 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  color: #011828;
+  color: #0a0b0b;
 }
 
 h1 {
@@ -101,6 +101,22 @@ header {
 }
 .solution-card div {
   padding: 1em;
+}
+.solution-card div a {
+  font-size: 1.4em;
+  margin-right: 0.3em;
+}
+.solution-card div a.live {
+  color: #00afb5;
+}
+.solution-card div a.live:hover {
+  background-color: rgba(0, 175, 181, 0.1);
+}
+.solution-card div a.repo {
+  color: #fc5130;
+}
+.solution-card div a.repo:hover {
+  background-color: rgba(252, 81, 48, 0.1);
 }
 .solution-card:hover {
   box-shadow: 0 0 8px #e8e8e8;

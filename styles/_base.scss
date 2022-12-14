@@ -3,24 +3,32 @@
 $body-font: "Work Sans", Arial, Helvetica, sans-serif;
 $header-font: "Sora", Arial, Helvetica, sans-serif;
 // --colors
-$dark-blue: #011828;
-$light-blue: #078eed;
-$light-teal: #38bcb4;
+$black: #0a0b0b;
+$light-blue: #00afb5;
+$light-red: #fc5130;
 $light-gray: #f5f5f5;
 $dark-gray: darken($light-gray, 5%);
+
+// Mixins
+@mixin custom-links($color) {
+  color: $color;
+  &:hover {
+    background-color: fade-out($color, 0.9);
+  }
+}
 
 // Typography
 body {
   font-family: $body-font;
   font-size: 100%;
-  color: $dark-blue;
+  color: $black;
 }
 h1,
 h2,
 h3 {
   font-family: $header-font;
   font-weight: 700;
-  color: $dark-blue;
+  color: $black;
 }
 h1 {
   font-size: 2.5em;

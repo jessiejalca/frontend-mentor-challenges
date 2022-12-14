@@ -6,8 +6,20 @@
   border: 1px solid $dark-gray;
   border-radius: 10px;
   overflow: hidden;
+  // Text div container
   div {
     padding: 1em;
+    // Links to live page & repo
+    a {
+      font-size: 1.4em;
+      margin-right: 0.3em;
+      &.live {
+        @include custom-links($light-blue);
+      }
+      &.repo {
+        @include custom-links($light-red);
+      }
+    }
   }
   &:hover {
     box-shadow: 0 0 8px $dark-gray;
