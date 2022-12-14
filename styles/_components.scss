@@ -3,14 +3,13 @@
 .solution-card {
   margin: auto;
   max-width: 30rem;
-  background-color: fade-out($light-gray, 0.25);
-  backdrop-filter: blur(5px);
+  border: 1px solid $dark-gray;
   border-radius: 10px;
   overflow: hidden;
   section {
     padding: 1em;
   }
   &:hover {
-    box-shadow: 0 0 6px fade-out($dark-blue, 0.7);
+    box-shadow: 0 0 8px $dark-gray;
   }
 }
