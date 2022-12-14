@@ -99,27 +99,33 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-.solution-card div {
+.solution-card .card-text {
   padding: 1em;
 }
-.solution-card div a {
+.solution-card .card-text a {
   font-size: 1.4em;
-  margin-right: 0.3em;
+  margin-right: 0.2em;
 }
-.solution-card div a.live {
+.solution-card .card-text a.live {
   color: #00afb5;
 }
-.solution-card div a.live:hover {
+.solution-card .card-text a.live:hover {
   background-color: rgba(0, 175, 181, 0.1);
 }
-.solution-card div a.repo {
+.solution-card .card-text a.repo {
   color: #fc5130;
 }
-.solution-card div a.repo:hover {
+.solution-card .card-text a.repo:hover {
   background-color: rgba(252, 81, 48, 0.1);
 }
-.solution-card:hover {
-  box-shadow: 0 0 8px #e8e8e8;
+.solution-card .card-image {
+  overflow: hidden;
+}
+.solution-card .card-image img {
+  transition: all 0.4s ease-in-out;
+}
+.solution-card .card-image img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */

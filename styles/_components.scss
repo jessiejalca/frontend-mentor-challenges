@@ -7,12 +7,12 @@
   border-radius: 10px;
   overflow: hidden;
   // Text div container
-  div {
+  .card-text {
     padding: 1em;
     // Links to live page & repo
     a {
       font-size: 1.4em;
-      margin-right: 0.3em;
+      margin-right: 0.2em;
       &.live {
         @include custom-links($light-blue);
       }
@@ -21,7 +21,13 @@
       }
     }
   }
-  &:hover {
-    box-shadow: 0 0 8px $dark-gray;
+  .card-image {
+    overflow: hidden;
+    img {
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 }
