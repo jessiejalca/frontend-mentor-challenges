@@ -98,5 +98,8 @@ header {
 .solution-card section {
   padding: 1em;
 }
+.solution-card:hover {
+  box-shadow: 0 0 6px rgba(1, 24, 40, 0.3);
+}
 
 /*# sourceMappingURL=main.css.map */

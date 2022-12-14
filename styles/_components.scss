@@ -10,4 +10,7 @@
   section {
     padding: 1em;
   }
+  &:hover {
+    box-shadow: 0 0 6px fade-out($dark-blue, 0.7);
+  }
 }
