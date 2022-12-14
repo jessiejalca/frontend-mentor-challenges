@@ -99,7 +99,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-.solution-card section {
+.solution-card div {
   padding: 1em;
 }
 .solution-card:hover {
