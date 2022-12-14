@@ -1,0 +1,13 @@
+@use "base" as *;
+
+.solution-card {
+  margin: auto;
+  max-width: 30rem;
+  background-color: fade-out($light-gray, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+  section {
+    padding: 1em;
+  }
+}
