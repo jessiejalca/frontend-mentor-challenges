@@ -67,9 +67,19 @@ h3 {
   color: #011828;
 }
 
+h1 {
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+header {
+  min-height: 30vh;
+  background-color: #f5f5f5;
+}
+
 .solutions-grid {
   display: grid;
-  padding: 1em;
+  padding: 2em;
 }
 
 .solution-card {

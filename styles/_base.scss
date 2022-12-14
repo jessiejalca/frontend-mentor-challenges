@@ -8,7 +8,7 @@ $light-blue: #078eed;
 $light-teal: #38bcb4;
 $light-gray: #f5f5f5;
 
-// Base Styles
+// Typography
 body {
   font-family: $body-font;
   font-size: 100%;
@@ -20,4 +20,8 @@ h3 {
   font-family: $header-font;
   font-weight: 700;
   color: $dark-blue;
+}
+h1 {
+  text-transform: uppercase;
+  line-height: 1em;
 }

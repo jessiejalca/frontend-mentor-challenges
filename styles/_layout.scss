@@ -1,6 +1,11 @@
 @use "base" as *;
 
+header {
+  min-height: 30vh;
+  background-color: $light-gray;
+}
+
 .solutions-grid {
   display: grid;
-  padding: 1em;
+  padding: 2em;
 }
