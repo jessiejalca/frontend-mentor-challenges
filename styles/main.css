@@ -124,7 +124,7 @@ header {
 .solution-card .card-text .tags li {
   padding: 0.1em 0.5em;
   margin-right: 0.5em;
-  border: 2.5px solid rgba(0, 175, 181, 0.8);
+  border: 2px solid rgba(0, 175, 181, 0.8);
   border-radius: 5em;
   font-weight: 700;
   color: #00afb5;
