@@ -72,7 +72,7 @@ body {
   background-color: var(--cream);
   padding: 1em;
   display: grid;
-  grid-template-rows: auto 3em;
+  grid-template-rows: 100vh 5vh;
 }
 
 .component {
