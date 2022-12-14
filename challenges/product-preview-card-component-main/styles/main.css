@@ -142,7 +142,7 @@ p {
   display: flex;
   align-items: center;
 }
-.price s {
+.price del {
   margin-left: 1.5em;
   font-family: var(--normal);
   font-size: 0.4em;
