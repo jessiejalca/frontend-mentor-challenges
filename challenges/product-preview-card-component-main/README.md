@@ -45,14 +45,18 @@ Users should be able to:
 
 ### What I learned
 
-- **How to handle subheadings:** Using next-level heading tags (like `<h2>` after `<h1>`) for subheadings is semantically incorrect and can cause issues. It's best to use a paragraph element with a "subhead" class. "Subheadings" are also referred to as "subtitles," "subheadlines," or sometimes "taglines" more traditionally refers to a slogan or motto.
+#### How to handle subheadings
+
+Using next-level heading tags (like `<h2>` after `<h1>`) for subheadings is semantically incorrect and can cause issues. It's best to use a paragraph element with a "subhead" class. "Subheadings" are also referred to as "subtitles," "subheadlines," or sometimes "taglines" more traditionally refers to a slogan or motto.
 
 ```html
 <h1>Example Header</h1>
 <p class="subhead">Example subhead</p>
 ```
 
-- **Adding screen-reader only information:** Because the crossed-out previous cost isn't explained adequately by screen-readers, it's important to include some extra information to put it into context for visually impaired users. But to make sure that this information isn't visible for other users, a `sr-only` class needs to be correctly implemented. It's a bit long of an explanation why this `clip` technique is used over something like `display: none` and other one-liners, but I'll include the info as a link under the Useful Resources section.
+#### Adding screen-reader only information
+
+Because the crossed-out previous cost isn't explained adequately by screen-readers, it's important to include some extra information to put it into context for visually impaired users. But to make sure that this information isn't visible for other users, a `sr-only` class needs to be correctly implemented. It's a bit long of an explanation why this `clip` technique is used over something like `display: none` and other one-liners, but I'll include the info as a link under the Useful Resources section.
 
 ```html
 <del><span class="sr-only">The previous price was</span>$169.99</del>
