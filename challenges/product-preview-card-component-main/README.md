@@ -48,10 +48,13 @@ Users should be able to:
 ### What I learned
 
 - **How to handle subheadings:** Using next-level heading tags (like `<h2>` after `<h1>`) for subheadings is semantically incorrect and can cause issues. It's best to use a paragraph element with a "subhead" class. It's also important to note that "subheadings" are actually different from "subtitles" or "taglines." The best term to use here is generally "subhead."
-`
+
+```
 <h1>Example Header</h1>
 <p class="subhead">Example subhead</p>
-`
+```
+
+- **Adding screen-reader only information:**
 
 ### Continued development
 
