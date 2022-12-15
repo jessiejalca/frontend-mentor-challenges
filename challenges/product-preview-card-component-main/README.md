@@ -83,7 +83,7 @@ I want to continue to learn about making my code more accessible and optimized f
 
 - [Semantic Subheadings](https://stackoverflow.com/questions/3910419/semantic-structure-in-html-subtitles-pre-html5) - This Stack Overflow question helped me understand the semantics behind subheadings a little bit better, and I developed my own preference based on the answers.
 - [Screen-reader-only Techniques](https://webaim.org/techniques/css/invisiblecontent/) - This article from WebAIM discusses common techniques for visually hiding content meant only for screen-readers and explains which ones are considered best practice.
-- [Hiding Content](https://www.a11yproject.com/posts/how-to-hide-content/) - this resource from the A11y Project gets to the point a little faster for the best techniques to use and explores distinctly different but similar situations.
+- [Hiding Content](https://www.a11yproject.com/posts/how-to-hide-content/) - This resource from the A11y Project gets to the point a little faster for the best techniques to use and explores distinctly different but similar situations.
 
 ## Author
 
