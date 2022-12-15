@@ -47,9 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- **How to handle subheadings:** Using next-level heading tags (like `<h2>` after `<h1>`) for subheadings is semantically incorrect and can cause issues. It's best to use a paragraph element with a "subhead" class. It's also important to note that "subheadings" are actually different from "subtitles" or "taglines." The best term to use here is generally "subhead."
+`
+<h1>Example Header</h1>
+<p class="subhead">Example subhead</p>
+`
 
 ### Continued development
 
