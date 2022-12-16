@@ -2,4 +2,4 @@
 
 My sandbox for Frontend Mentor challenges.
 
-[Live Library](https://jessiejalca.github.io/frontend-mentor-challenges/)
+[View the live solution library](https://jessiejalca.github.io/frontend-mentor-challenges/)
