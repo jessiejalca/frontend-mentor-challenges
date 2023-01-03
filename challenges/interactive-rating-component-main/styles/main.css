@@ -122,10 +122,15 @@ body {
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
+#rating-component div label:has(> input[type=radio]:checked) {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
 #rating-component div input[type=radio] {
   display: none;
 }
 #rating-component button {
+  font-weight: 700;
   margin-top: 1em;
 }
 

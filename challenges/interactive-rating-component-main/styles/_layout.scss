@@ -26,10 +26,16 @@ body {
       // make the radio labels circular
       border-radius: 100em;
       aspect-ratio: 1;
+      // change the color when hovered
       &:hover {
         background-color: $light-grey;
         color: $white;
         cursor: pointer;
+      }
+      // change the color when checked
+      &:has(> input[type="radio"]:checked) {
+        background-color: $orange;
+        color: $white;
       }
     }
 
@@ -39,6 +45,7 @@ body {
   }
 
   button {
+    font-weight: 700;
     margin-top: 1em;
   }
 }
