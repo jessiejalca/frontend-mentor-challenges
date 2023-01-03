@@ -1,2 +1,41 @@
+@use "base" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 #rating-component {
+  margin: auto;
+  display: grid;
+  gap: 1em;
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+    label {
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $transparent-grey;
+      border-radius: 100em;
+      aspect-ratio: 1;
+      &:hover {
+        background-color: $light-grey;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+  }
+
+  button {
+    margin-top: 1em;
+  }
 }

@@ -85,11 +85,48 @@ body {
   border-radius: 100em;
   padding: 0.6em;
   width: 100%;
+  box-shadow: 0 0 7px hsl(216deg, 12%, 8%);
 }
 #rating-component button:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(0deg, 0%, 100%);
   cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#rating-component {
+  margin: auto;
+  display: grid;
+  gap: 1em;
+}
+#rating-component div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+#rating-component div label {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(149, 158, 172, 0.1);
+  border-radius: 100em;
+  aspect-ratio: 1;
+}
+#rating-component div label:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating-component div input[type=radio] {
+  display: none;
+}
+#rating-component button {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
