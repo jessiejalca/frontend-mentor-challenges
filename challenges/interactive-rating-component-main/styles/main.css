@@ -55,7 +55,7 @@ h6 {
 
 body {
   font-size: 100%;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(217deg, 12%, 63%);
   background-color: hsl(216deg, 12%, 8%);
   font-family: "Overpass", Helvetica, sans-serif;
 }
@@ -63,6 +63,33 @@ body {
 #rating-component {
   font-size: 0.9375rem;
   background-color: hsl(213deg, 19%, 18%);
+  max-width: 23em;
+  border-radius: 15px;
+  padding: 25px;
+}
+#rating-component .small-img {
+  background-color: rgba(149, 158, 172, 0.1);
+  box-sizing: content-box;
+  width: 14px;
+  border-radius: 100em;
+  padding: 12px;
+}
+#rating-component h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+#rating-component button {
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 100em;
+  padding: 0.6em;
+  width: 100%;
+}
+#rating-component button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

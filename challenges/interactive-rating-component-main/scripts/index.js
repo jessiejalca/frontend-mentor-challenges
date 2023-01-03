@@ -27,6 +27,7 @@ const postResult = (userRating) => {
 
   IMG.setAttribute("src", "./images/illustration-thank-you.svg");
   IMG.setAttribute("alt", "abstract device illustration");
+  IMG.classList.remove("small-img");
   TITLE.textContent = `Thank you!`;
   TITLE.before(RESULT);
   SUB.textContent = `We appreciate you taking the time to give a rating.
