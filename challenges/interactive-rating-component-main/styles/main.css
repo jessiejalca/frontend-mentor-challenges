@@ -110,10 +110,10 @@ body {
 }
 #rating-component div label {
   font-weight: 700;
+  background-color: rgba(149, 158, 172, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(149, 158, 172, 0.1);
   border-radius: 100em;
   aspect-ratio: 1;
 }

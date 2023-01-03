@@ -11,16 +11,19 @@ body {
   gap: 1em;
 
   div {
+    // create equal spacing between radio options
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
 
     label {
       font-weight: 700;
+      background-color: $transparent-grey;
+      // center the text
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $transparent-grey;
+      // make the radio labels circular
       border-radius: 100em;
       aspect-ratio: 1;
       &:hover {
