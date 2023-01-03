@@ -7,21 +7,17 @@
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
   line-height: calc(1em + 0.5rem);
 }
-
 html,
 body {
   height: 100%;
 }
-
 body {
   -webkit-font-smoothing: antialiased;
 }
-
 img,
 picture,
 video,
@@ -30,14 +26,12 @@ svg {
   display: block;
   max-width: 100%;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 p,
 h1,
 h2,
@@ -46,23 +40,9 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  // hyphens: auto;
 }
-
 #root,
 #__next {
   isolation: isolate;
 }
-
-body {
-  font-size: 100%;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(216deg, 12%, 8%);
-  font-family: "Overpass", Helvetica, sans-serif;
-}
-
-#rating-component {
-  font-size: 0.9375rem;
-  background-color: hsl(213deg, 19%, 18%);
-}
-
-/*# sourceMappingURL=main.css.map */
