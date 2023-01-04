@@ -20,24 +20,23 @@ const fetchRating = () => {
 };
 
 const postResult = (userRating) => {
-  // only run if the user has selected a rating
   // checks if userRating holds a truthy value
-  if (userRating) {
-    const IMG = COMPONENT.querySelector("img");
-    const TITLE = COMPONENT.querySelector("h1");
-    const SUB = COMPONENT.querySelector("p");
-    const RESULT = document.createElement("p");
+  // won't run the rest of the code if the user hasn't selected a rating
+  if (!userRating) return;
+  const IMG = COMPONENT.querySelector("img");
+  const TITLE = COMPONENT.querySelector("h1");
+  const SUB = COMPONENT.querySelector("p");
+  const RESULT = document.createElement("p");
 
-    IMG.setAttribute("src", "./images/illustration-thank-you.svg");
-    IMG.setAttribute("alt", "abstract device illustration");
-    IMG.classList.remove("small-img");
-    TITLE.textContent = `Thank you!`;
-    TITLE.before(RESULT);
-    SUB.textContent = `We appreciate you taking the time to give a rating.
+  IMG.setAttribute("src", "./images/illustration-thank-you.svg");
+  IMG.setAttribute("alt", "abstract device illustration");
+  IMG.classList.remove("small-img");
+  TITLE.textContent = `Thank you!`;
+  TITLE.before(RESULT);
+  SUB.textContent = `We appreciate you taking the time to give a rating.
     If you ever need more support, don't hesitate to get in touch!`;
-    RESULT.textContent = `You selected ${userRating} out of 5`;
-    RESULT.classList.add("result");
-    FORM.remove();
-    COMPONENT.classList.add("result");
-  }
+  RESULT.textContent = `You selected ${userRating} out of 5`;
+  RESULT.classList.add("result");
+  FORM.remove();
+  COMPONENT.classList.add("result");
 };
