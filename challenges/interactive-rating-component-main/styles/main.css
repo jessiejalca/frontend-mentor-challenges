@@ -58,8 +58,13 @@ body {
   font-family: "Overpass", Helvetica, sans-serif;
   color: hsl(217deg, 12%, 63%);
   background-color: hsl(216deg, 12%, 8%);
+  display: grid;
+  grid-template-rows: 1fr 3em;
+}
+
+main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 #rating-component {

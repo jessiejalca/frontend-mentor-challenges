@@ -6,8 +6,13 @@ body {
   font-family: "Overpass", Helvetica, sans-serif;
   color: $light-grey;
   background-color: $very-dark-blue;
+  display: grid;
+  grid-template-rows: 1fr 3em;
+}
+
+main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 #rating-component {
