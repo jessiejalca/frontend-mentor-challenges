@@ -145,4 +145,17 @@ body {
   justify-self: center;
 }
 
+.attribution {
+  font-size: 0.6em;
+  text-align: center;
+  padding: 1em;
+}
+.attribution a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  background-color: rgba(149, 158, 172, 0.1);
+}
+
 /*# sourceMappingURL=main.css.map */

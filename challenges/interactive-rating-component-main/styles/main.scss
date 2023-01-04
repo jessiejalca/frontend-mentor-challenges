@@ -111,3 +111,16 @@ body {
     justify-self: center;
   }
 }
+
+.attribution {
+  font-size: 0.6em;
+  text-align: center;
+  padding: 1em;
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      background-color: $transparent-grey;
+    }
+  }
+}
