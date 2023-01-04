@@ -103,6 +103,11 @@ body {
   display: grid;
   gap: 1em;
 }
+@media screen and (min-width: 720px) {
+  #rating-component {
+    max-width: 26em;
+  }
+}
 #rating-component div {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
