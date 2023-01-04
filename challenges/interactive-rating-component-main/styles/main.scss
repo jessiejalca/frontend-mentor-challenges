@@ -1,3 +1,113 @@
 @use "reset";
-@use "base";
-@use "layout";
+@use "variables" as *;
+
+body {
+  font-size: 100%;
+  font-family: "Overpass", Helvetica, sans-serif;
+  color: $light-grey;
+  background-color: $very-dark-blue;
+  display: flex;
+  flex-direction: column;
+}
+
+#rating-component {
+  font-size: 0.9375rem;
+  background-color: $dark-blue;
+  max-width: 23em;
+  border-radius: 15px;
+  padding: 25px;
+  margin: auto;
+  display: grid;
+  gap: 1em;
+
+  // wider component for wider viewport
+  @media screen and (min-width: 720px) {
+    max-width: 26em;
+  }
+
+  // star image
+  .small-img {
+    background-color: $transparent-grey;
+    box-sizing: content-box;
+    width: 14px;
+    border-radius: 100em;
+    padding: 12px;
+  }
+
+  // title
+  h1 {
+    color: $white;
+  }
+
+  // radio inputs
+  div {
+    // create equal spacing between radio options
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+    label {
+      font-weight: 700;
+      background-color: $transparent-grey;
+      // center the text
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // make the radio labels circular
+      border-radius: 100em;
+      aspect-ratio: 1;
+      // change the color when hovered
+      &:hover {
+        background-color: $light-grey;
+        color: $white;
+        cursor: pointer;
+      }
+      // change the color when checked
+      &:has(> input[type="radio"]:checked) {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+
+    // hide default radio input
+    input[type="radio"] {
+      display: none;
+    }
+  }
+
+  // button input
+  button {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $orange;
+    border: none;
+    border-radius: 100em;
+    padding: 0.6em;
+    width: 100%;
+    box-shadow: 0 0 7px $very-dark-blue;
+    &:hover {
+      color: $orange;
+      background-color: $white;
+      cursor: pointer;
+    }
+    margin-top: 1em;
+  }
+}
+
+// thank-you layout
+#rating-component.result {
+  text-align: center;
+
+  p.result {
+    color: $orange;
+    background-color: $transparent-grey;
+    border-radius: 100em;
+    margin: 0.6em auto;
+    padding: 0.4em 1em;
+  }
+
+  img {
+    justify-self: center;
+  }
+}
