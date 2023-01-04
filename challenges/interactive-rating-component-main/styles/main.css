@@ -134,4 +134,18 @@ body {
   margin-top: 1em;
 }
 
+.result {
+  text-align: center;
+}
+.result p.result {
+  color: hsl(25deg, 97%, 53%);
+  background-color: rgba(149, 158, 172, 0.1);
+  border-radius: 100em;
+  margin: 0.6em auto;
+  padding: 0.4em 1em;
+}
+.result img {
+  justify-self: center;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -32,7 +32,8 @@ const postResult = (userRating) => {
   TITLE.before(RESULT);
   SUB.textContent = `We appreciate you taking the time to give a rating.
   If you ever need more support, don't hesitate to get in touch!`;
-  RESULT.className = "result";
   RESULT.textContent = `You selected ${userRating} out of 5`;
+  RESULT.classList.add("result");
   FORM.remove();
+  COMPONENT.classList.add("result");
 };

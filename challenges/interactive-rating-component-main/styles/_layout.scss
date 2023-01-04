@@ -49,3 +49,19 @@ body {
     margin-top: 1em;
   }
 }
+
+.result {
+  text-align: center;
+
+  p.result {
+    color: $orange;
+    background-color: $transparent-grey;
+    border-radius: 100em;
+    margin: 0.6em auto;
+    padding: 0.4em 1em;
+  }
+
+  img {
+    justify-self: center;
+  }
+}
