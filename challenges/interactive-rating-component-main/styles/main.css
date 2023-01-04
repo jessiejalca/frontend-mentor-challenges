@@ -64,7 +64,7 @@ body {
 
 #rating-component {
   font-size: 0.9375rem;
-  background-color: hsl(213deg, 19%, 18%);
+  background-image: linear-gradient(hsl(213deg, 19%, 18%), #171c21);
   max-width: 23em;
   border-radius: 15px;
   padding: 25px;
@@ -122,7 +122,6 @@ body {
   border-radius: 100em;
   padding: 0.6em;
   width: 100%;
-  box-shadow: 0 0 7px hsl(216deg, 12%, 8%);
   margin-top: 1em;
 }
 #rating-component button:hover {

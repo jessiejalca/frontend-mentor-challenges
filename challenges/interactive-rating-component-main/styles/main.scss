@@ -12,7 +12,7 @@ body {
 
 #rating-component {
   font-size: 0.9375rem;
-  background-color: $dark-blue;
+  background-image: linear-gradient($dark-blue, $darker-blue);
   max-width: 23em;
   border-radius: 15px;
   padding: 25px;
@@ -85,7 +85,6 @@ body {
     border-radius: 100em;
     padding: 0.6em;
     width: 100%;
-    box-shadow: 0 0 7px $very-dark-blue;
     &:hover {
       color: $orange;
       background-color: $white;
