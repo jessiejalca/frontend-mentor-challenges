@@ -62,7 +62,7 @@ Part of this challenge is to provide feedback to the user by highlighting the wh
   ><input type="radio" id="1" name="rating" value="1" />1</label
 >
 ```
-So to style the label based on the input, I had to visually hide the input button and style the label to _look_ like an input method. However, one major challenge I ran into was visually selecting the label, because the the `:checked` pseudo-class selector is specific to its associated input. As a solution, I came across this newer pseudo-class: `:has`, which can be used to target a parent element based on the child it contains.
+So to style the radio form as designed, I decided to visually hide the input button and style the label to _look_ like an input method. However, one major challenge I ran into was visually selecting the label, because the the `:checked` pseudo-class selector is specific to its associated input. As a solution, I came across this newer pseudo-class: `:has`, which can be used to target a parent element based on the child it contains.
 ```scss
 // change the color when checked
 &:has(> input[type="radio"]:checked) {
@@ -76,11 +76,11 @@ Note: Because `:has` is a newer feature to CSS, it doesn't work in some browsers
 
 Although my solution works well for most users, it may not for visually impaired users or others that use keyboards to navigate and make selections. I want to look further into more accessible solutions to hopefully improve and future projects.
 
-I would hope to start using JavaScript libraries and frameworks, like React, Bootstrap, and Svelte in future projects for practice.
+I hope to start using JavaScript libraries and frameworks, like React, Bootstrap, and Svelte in future projects for practice.
 
 ### Useful resources
 
-- [:has() CSS pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) - This helped explain how to use the :has() pseudo-class,
+- [:has() CSS pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) - MDN article describing the `:has()` pseudo-class.
 
 ## Author
 
