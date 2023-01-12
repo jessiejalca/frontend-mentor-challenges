@@ -66,11 +66,11 @@ body {
   font-size: 0.9375rem;
   background-image: linear-gradient(hsl(213deg, 19%, 18%), #171c21);
   max-width: 23em;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 25px;
+  padding: 35px;
   margin: auto;
   display: grid;
-  gap: 1em;
+  gap: 1rem;
 }
 @media screen and (min-width: 720px) {
   #rating-component {
@@ -82,6 +82,7 @@ body {
   box-sizing: content-box;
   width: 14px;
   border-radius: 100em;
+  margin-bottom: 0.6rem;
   padding: 12px;
 }
 #rating-component h1 {
@@ -89,7 +90,7 @@ body {
 }
 #rating-component fieldset {
   border: none;
-  padding: 0;
+  padding: 0.5rem 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
@@ -133,7 +134,7 @@ body {
   border-radius: 100em;
   padding: 0.6em;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 1.2rem;
 }
 #rating-component button:hover {
   color: hsl(25deg, 97%, 53%);

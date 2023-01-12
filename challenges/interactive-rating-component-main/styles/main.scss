@@ -14,11 +14,11 @@ body {
   font-size: 0.9375rem;
   background-image: linear-gradient($dark-blue, $darker-blue);
   max-width: 23em;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 25px;
+  padding: 35px;
   margin: auto;
   display: grid;
-  gap: 1em;
+  gap: 1rem;
 
   // wider component for wider viewport
   @media screen and (min-width: 720px) {
@@ -31,6 +31,7 @@ body {
     box-sizing: content-box;
     width: 14px;
     border-radius: 100em;
+    margin-bottom: 0.6rem;
     padding: 12px;
   }
 
@@ -43,7 +44,7 @@ body {
   fieldset {
     // create equal spacing between radio options
     border: none;
-    padding: 0;
+    padding: 0.5rem 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
@@ -103,7 +104,7 @@ body {
       background-color: $white;
       cursor: pointer;
     }
-    margin-top: 1em;
+    margin-top: 1.2rem;
   }
 }
 
