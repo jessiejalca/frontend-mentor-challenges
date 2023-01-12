@@ -62,11 +62,6 @@ body {
   grid-template-rows: 1fr 3em;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 #rating-component {
   font-size: 0.9375rem;
   background-image: linear-gradient(hsl(213deg, 19%, 18%), #171c21);
@@ -92,12 +87,23 @@ main {
 #rating-component h1 {
   color: hsl(0deg, 0%, 100%);
 }
-#rating-component div {
+#rating-component fieldset {
+  border: none;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
 }
-#rating-component div label {
+#rating-component fieldset legend {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+#rating-component fieldset label {
   font-weight: 700;
   background-color: rgba(149, 158, 172, 0.1);
   display: flex;
@@ -106,16 +112,16 @@ main {
   border-radius: 100em;
   aspect-ratio: 1;
 }
-#rating-component div label:hover {
+#rating-component fieldset label:hover {
   background-color: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-#rating-component div label:has(> input[type=radio]:checked) {
+#rating-component fieldset label:has(> input[type=radio]:checked) {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
 }
-#rating-component div input[type=radio] {
+#rating-component fieldset input[type=radio] {
   display: none;
 }
 #rating-component button {

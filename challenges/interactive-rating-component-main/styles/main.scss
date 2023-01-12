@@ -10,11 +10,6 @@ body {
   grid-template-rows: 1fr 3em;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 #rating-component {
   font-size: 0.9375rem;
   background-image: linear-gradient($dark-blue, $darker-blue);
@@ -45,11 +40,24 @@ main {
   }
 
   // radio inputs
-  div {
+  fieldset {
     // create equal spacing between radio options
+    border: none;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+
+    // make screen-reader instructions invisible for sighted users
+    legend {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+    }
 
     label {
       font-weight: 700;
